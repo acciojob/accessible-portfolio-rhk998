@@ -1,16 +1,50 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Accessible Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <!-- Main header with ARIA role 'heading' -->
+    <header>
+        <h1 role="heading">My Accessible Portfolio</h1>
+    </header>
+
+    <!-- Navigation bar with ARIA role 'navigation' -->
+    <nav role="navigation">
+        <ul role="list">
+            <li role="listitem"><a href="#about">About Me</a></li>
+            <li role="listitem"><a href="#projects">Projects</a></li>
+            <li role="listitem"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Me section with an image and description -->
+    <section id="about">
+        <h2 role="heading">About Me</h2>
+        <img src="profile.jpg" alt="A photo of me" role="img"> <!-- Alt attribute for the image -->
+        <p>I am a passionate web developer with a focus on creating accessible, user-friendly websites. My goal is to ensure everyone, including users with disabilities, can experience the web in a meaningful way.</p>
+    </section>
+
+    <!-- Projects list -->
+    <section id="projects">
+        <h2 role="heading">My Projects</h2>
+        <ul role="list">
+            <li role="listitem">Project 1: Accessible Web App</li>
+            <li role="listitem">Project 2: Responsive Design Portfolio</li>
+            <li role="listitem">Project 3: E-commerce Platform</li>
+        </ul>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact">
+        <h2 role="heading">Contact Me</h2>
+        <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
+    </section>
 
 </body>
-
 </html>
